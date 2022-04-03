@@ -1,0 +1,9 @@
+{
+  "timestamp": "2020-01-01T00:00:00+04:00",
+  "mobileDevice": {
+    "appName": "Digihaler",
+    "appVersionNumber": "1.0.0",
+    "operatingSystem": "IOS",
+    "firebaseToken": "ae565b2b-a66e-4529-926d-ce41e19a10a0"
+  }
+}

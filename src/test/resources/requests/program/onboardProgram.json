@@ -1,0 +1,13 @@
+{
+  "activePrivacyNoticeVersion": "1.0",
+  "activeTermsAndConditionsVersion": "1.0",
+  "description": "Sanity program1",
+  "drugs": [
+    "AAA200"
+  ],
+  "endDate": "2100-01-01",
+  "programName": "{{program_name1}}",
+  "programType": "clinical",
+  "organizationID": "{{organization-id}}",
+  "startDate": "2020-01-01"
+}

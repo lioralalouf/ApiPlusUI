@@ -1,0 +1,22 @@
+{
+  "name": "Sanity_organization",
+  "mnemonic": "Sanity_{{mnemonic}}",
+  "activePrivacyNoticeVersion": "1.0",
+  "activeTermsAndConditionsVersion": "1.0",
+  "description": "Organization used for Sanity",
+  "logo": "http://www.example_17.com/resources/logo_17.png",
+  "url": "http://www.example_17.com/",
+  "address": {
+    "street": "Ha'Barzel 27",
+    "city": "Tel Aviv",
+    "region": "Dan",
+    "country": "Israel",
+    "postalCode": "99999"
+  },
+  "settings": {
+    "featureFlag1": "true",
+    "featureFlag2": "true",
+    "featureFlag3": "true",
+    "featureFlag4": "false"
+  }
+}

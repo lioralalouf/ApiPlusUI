@@ -1,0 +1,25 @@
+{
+  "timestamp": "2020-01-01T00:00:00+04:00",
+  "settings": [
+    {
+      "key": "enableNotifications",
+      "value": true
+    },
+    {
+      "key": "enableDarkMode",
+      "value": true
+    },
+    {
+      "key": "nameOfPet",
+      "value": "Miles"
+    },
+    {
+      "key": "favoriteNumber",
+      "value": 5
+    },
+    {
+      "key": "locale",
+      "value": "en-US"
+    }
+  ]
+}

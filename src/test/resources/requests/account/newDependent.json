@@ -1,0 +1,11 @@
+{
+  "timestamp": "2020-01-01T00:00:00+04:00",
+  "dependent": {
+    "firstName": "Skippy",
+    "lastName": "Lou",
+    "dependentID": "a70d298a-ad29-4868-9752-641fae57e37a",
+    "dateOfBirth": "1950-01-01",
+    "ageOfMajority": "1950-01-01",
+    "locale": "en-US"
+  }
+}

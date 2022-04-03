@@ -1,0 +1,219 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 266338304 bytes for G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Zero Based Compressed Oops mode in which the Java heap is
+#     placed in the first 32GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 32GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3469), pid=34716, tid=38588
+#
+# JRE version:  (17.0+35) (build )
+# Java VM: OpenJDK 64-Bit Server VM (17+35, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -ea -javaagent:C:\Users\lior.alalouf\.m2\repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar -Dfile.encoding=Cp1255 -XX:+ShowCodeDetailsInExceptionMessages org.testng.remote.RemoteTestNG -serport 50035 -protocol json -d C:\Users\lior.alalouf\eclipse-workspace\DSS\test-output C:\Users\LIOR~1.ALA\AppData\Local\Temp\testng-eclipse--889512279\testng-customsuite.xml
+
+Host: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz, 4 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1566)
+Time: Tue Mar 22 19:54:33 2022 Jerusalem Standard Time elapsed time: 0.079574 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000026608cbf1b0):  JavaThread "Unknown thread" [_thread_in_vm, id=38588, stack(0x0000007c8b100000,0x0000007c8b200000)]
+
+Stack: [0x0000007c8b100000,0x0000007c8b200000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x674afa]
+V  [jvm.dll+0x82eb44]
+V  [jvm.dll+0x8302ee]
+V  [jvm.dll+0x830953]
+V  [jvm.dll+0x245335]
+V  [jvm.dll+0x671ae9]
+V  [jvm.dll+0x6665b2]
+V  [jvm.dll+0x303e3b]
+V  [jvm.dll+0x30b376]
+V  [jvm.dll+0x35b30e]
+V  [jvm.dll+0x35b53f]
+V  [jvm.dll+0x2dad78]
+V  [jvm.dll+0x2dbce4]
+V  [jvm.dll+0x8006a1]
+V  [jvm.dll+0x369081]
+V  [jvm.dll+0x7dfb6c]
+V  [jvm.dll+0x3eb9bf]
+V  [jvm.dll+0x3ed6f1]
+C  [jli.dll+0x5277]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17034]
+C  [ntdll.dll+0x52651]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ffe3bc44e58, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x0000026608d0aae0 GCTaskThread "GC Thread#0" [stack: 0x0000007c8b200000,0x0000007c8b300000] [id=49324]
+  0x0000026608d1c6c0 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000007c8b300000,0x0000007c8b400000] [id=26976]
+  0x0000026608d1cfe0 ConcurrentGCThread "G1 Conc#0" [stack: 0x0000007c8b400000,0x0000007c8b500000] [id=21988]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffe3b41b7f7]
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000026608cbaf10] Heap_lock - owner thread: 0x0000026608cbf1b0
+
+Heap address: 0x0000000702800000, size: 4056 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 0.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+<Empty>
+
+Heap:
+ garbage-first heap   total 0K, used 0K [0x0000000702800000, 0x0000000800000000)
+  region size 2048K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffe3b7fdfc9]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Events (1 events):
+Event: 0.048 Loaded shared library C:\Users\lior.alalouf\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin\java.dll
+
+
+Dynamic libraries:
+0x00007ff6f7cb0000 - 0x00007ff6f7cbe000 	C:\Users\lior.alalouf\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin\javaw.exe
+0x00007ffea02d0000 - 0x00007ffea04c5000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffe9e630000 - 0x00007ffe9e6ee000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffe9e060000 - 0x00007ffe9e328000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffe9dd10000 - 0x00007ffe9de10000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffe80350000 - 0x00007ffe80368000 	C:\Users\lior.alalouf\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin\jli.dll
+0x00007ffe9ec20000 - 0x00007ffe9edc0000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffe9dce0000 - 0x00007ffe9dd02000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffea0090000 - 0x00007ffea00bb000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffe9df50000 - 0x00007ffe9e05b000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffe9de40000 - 0x00007ffe9dedd000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffe802f0000 - 0x00007ffe80309000 	C:\Users\lior.alalouf\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin\VCRUNTIME140.dll
+0x00007ffe89a10000 - 0x00007ffe89caa000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffe9f060000 - 0x00007ffe9f0fe000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffe9e5f0000 - 0x00007ffe9e620000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000026607440000 - 0x0000026607454000 	C:\WINDOWS\System32\umppc15005.dll
+0x00007ffe92810000 - 0x00007ffe9281c000 	C:\Users\lior.alalouf\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin\vcruntime140_1.dll
+0x00007ffe788a0000 - 0x00007ffe78931000 	C:\Users\lior.alalouf\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin\msvcp140.dll
+0x00007ffe3b130000 - 0x00007ffe3bd76000 	C:\Users\lior.alalouf\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin\server\jvm.dll
+0x00007ffe9fbc0000 - 0x00007ffe9fc6e000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffe9ef50000 - 0x00007ffe9efec000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffe9e4c0000 - 0x00007ffe9e5e5000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffe9e620000 - 0x00007ffe9e628000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffe82f90000 - 0x00007ffe82f99000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffe9eff0000 - 0x00007ffe9f05b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffe7d2c0000 - 0x00007ffe7d2e7000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffe93e60000 - 0x00007ffe93e6a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffe9c280000 - 0x00007ffe9c292000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffe98a50000 - 0x00007ffe98a5a000 	C:\Users\lior.alalouf\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin\jimage.dll
+0x00007ffe9b880000 - 0x00007ffe9ba64000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffe87a40000 - 0x00007ffe87a6c000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffe9dc50000 - 0x00007ffe9dcd2000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffe89010000 - 0x00007ffe8901e000 	C:\Users\lior.alalouf\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin\instrument.dll
+0x00007ffe87150000 - 0x00007ffe87175000 	C:\Users\lior.alalouf\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin\java.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\lior.alalouf\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;C:\Users\lior.alalouf\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin\server
+
+VM Arguments:
+jvm_args: -ea -javaagent:C:\Users\lior.alalouf\.m2\repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar -Dfile.encoding=Cp1255 -XX:+ShowCodeDetailsInExceptionMessages 
+java_command: org.testng.remote.RemoteTestNG -serport 50035 -protocol json -d C:\Users\lior.alalouf\eclipse-workspace\DSS\test-output C:\Users\LIOR~1.ALA\AppData\Local\Temp\testng-eclipse--889512279\testng-customsuite.xml
+java_class_path (initial): C:\Users\lior.alalouf\eclipse\java-2021-09\eclipse\configuration\org.eclipse.osgi\442\0\.cp\lib\testng-remote.jar;C:\Users\lior.alalouf\eclipse-workspace\DSS\target\test-classes;C:\Users\lior.alalouf\eclipse-workspace\DSS\target\classes;C:\Users\lior.alalouf\.p2\pool\plugins\org.testng_7.4.0.r202105021533.jar;C:\Users\lior.alalouf\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar;C:\Users\lior.alalouf\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar;C:\Users\lior.alalouf\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar;C:\Users\lior.alalouf\.p2\pool\plugins\org.webjars.jquery_3.5.1.jar;C:\Users\lior.alalouf\Downloads\lombok.jar;C:\Users\lior.alalouf\Downloads\hamcrest-all-1.3.jar;C:\Users\lior.alalouf\Downloads\base64-2.3.7.jar;C:\Users\lior.alalouf\.m2\repository\software\amazon\awssdk\apigateway\2.17.81\apigateway-2.17.81.jar;C:\Users\lior.alalouf\.m2\repository\software\amazon\awssdk\aws-json-protocol\2.17.100\aws-json-protocol-2.17.100.jar;C:\Users\lior.alalouf\.m2\repository\software\amazon\awssdk\third-party-jackson-core\2.17.100\third-party-jackson-core-2.17.100.jar;C:\Users\lior.alalouf\.m2\repository\software\amazon\awssdk\json-utils\2.17.100\json-utils-2.17.100.jar;C:\Users\lior.alalouf\.m2\repository\software\amazon\awssdk\protocol-core\2.17.100\protocol-core-2.17.100.jar;C:\Users\lior.alalouf\.m2\repository\software\amazon\awssdk\sdk-core\2.17.100\sdk-core-2.17.100.jar;C:\Users\lior.alalouf\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\lior.alalouf\.m2\repository\software\amazon\awssdk\auth\2.17.100\auth-2.17.100.jar;C:\Users\lior.alalouf\.m2\repository\software\amazon\eventstream\eventstream\1.0.1\eventstream-1.0.1.jar;C:\Users\lior.alalouf\.m2\repository\software\amazon\awssdk\http-client-spi\2.17.100\http-client-spi-2.17.100.jar;C:\Users\lior.alalouf\.m2\repository\software\amazon\awssdk\regions\2.17.100\regions-2.17.100.jar;C:\Users\lior.alalouf\.m2\repository\soft
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 3                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 4                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 2097152                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 266338304                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 4253024256                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 2097152                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5832780                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122912730                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122912730                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool ShowCodeDetailsInExceptionMessages       = true                                   {manageable} {command line}
+   size_t SoftMaxHeapSize                          = 4253024256                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_211
+CLASSPATH=.;
+PATH=C:/Users/lior.alalouf/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059/jre/bin/server;C:/Users/lior.alalouf/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.8.3\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Java\jdk1.8.0_211\jre\bin;C:\Users\lior.alalouf\AppData\Local\Microsoft\WindowsApps;C:\Users\lior.alalouf\AppData\Local\Programs\Git\cmd;C:\Windows;
+USERNAME=Lior.Alalouf
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 10 , 64 bit Build 19041 (10.0.19041.1566)
+OS uptime: 16 days 10:50 hours
+
+CPU: total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 78 stepping 3 microcode 0xe0, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, fma, vzeroupper, clflush, clflushopt
+
+Memory: 4k page, system-wide physical 16221M (1960M free)
+TotalPageFile size 44838M (AvailPageFile size 234M)
+current process WorkingSet (physical memory assigned to process): 11M, peak: 11M
+current process commit charge ("private bytes"): 51M, peak: 305M
+
+vm_info: OpenJDK 64-Bit Server VM (17+35) for windows-amd64 JRE (17+35), built on Sep 14 2021 17:27:39 by "" with MS VC++ 16.7 (VS2019)
+
+END.

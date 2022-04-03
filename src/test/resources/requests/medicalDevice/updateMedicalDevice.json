@@ -1,0 +1,35 @@
+{
+  "inhalers": [
+    {
+      "timestamp": "2020-01-01T00:00:00+04:00",
+      "inhaler": {
+        "lastConnectionDate": "2020-01-01T00:00:00+04:00",
+        "lastRecord": 0,
+        "addedDate": "2020-12-01T00:00:00+04:00",
+        "drugID": "AAA200",
+        "nickName": "Huff Daddy",
+        "authenticationKey": "ZTViNWM2ZTEtZmMxYi00MTQzLTkwOTUtNjZlODM5NjI0OTRm",
+        "serialNumber": 123456789,
+        "remainingDoseCount": 5,
+        "hardwareRevision": "003H",
+        "softwareRevision": "1.1.1274.26676"
+      }
+    },
+    {
+      "timestamp": "2020-01-01T00:00:00+04:00",
+      "inhaler": {
+        "lastConnectionDate": "2020-01-01T00:00:00+04:00",
+        "addedDate": "2020-12-01T00:00:00+04:00",
+        "lastRecord": 0,
+        "drugID": "AAA200",
+        "nickName": "Huff Daddy",
+        "authenticationKey": "ZTViNWM2ZTEtZmMxYi00MTQzLTkwOTUtNjZlODM5NjI0OTRm",
+        "serialNumber": 123456789,
+        "remainingDoseCount": 5,
+        "hardwareRevision": "003H",
+        "softwareRevision": "1.1.1274.26676"
+      }
+    }
+  ]
+}
+

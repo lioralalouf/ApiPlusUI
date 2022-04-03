@@ -1,0 +1,50 @@
+{
+  "inhalations": [
+    {
+      "timestamp": "2022-01-27T16:36:40.509+00:00",
+      "inhalation": {
+        "event": {
+          "id": 4,
+          "time": "2022-01-27T16:36:40.509+00:00",
+          "category": "good",
+          "startOffset": 3,
+          "duration": 4,
+          "peakFlow": 2,
+          "peakOffset": 4,
+          "volume": 3,
+          "status": 100101
+        },
+        "device": {
+          "serialNumber": 4567987634
+        },
+        "geolocation": {
+          "longitude": 42.358,
+          "latitude": -71.058
+        }
+      }
+    },
+    {
+      "timestamp": "2022-01-26T16:36:40.509+00:00",
+      "inhalation": {
+        "event": {
+          "id": 4,
+          "time": "2022-01-26T16:36:40.509+00:00",
+          "category": "good",
+          "startOffset": 3,
+          "duration": 4,
+          "peakFlow": 2,
+          "peakOffset": 4,
+          "volume": 3,
+          "status": 100101
+        },
+        "device": {
+          "serialNumber": 4567987634
+        },
+        "geolocation": {
+          "longitude": 42.358,
+          "latitude": -71.058
+        }
+      }
+    }
+  ]
+}

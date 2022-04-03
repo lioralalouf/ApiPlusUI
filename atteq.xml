@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="atteq">
+    <listeners>
+        <listener class-name = "extentReports.TestListeners"> </listener>
+    </listeners>
+    <test thread-count="5" name="attteq">
+        <classes>
+            <class name="tests.qualification.maven.ApiPositiveMethodsTest"/>
+            <class name="tests.qualification.maven.AuthenticationTest"/>
+            <class name="tests.qualification.maven.ApiParametersTest"/>
+            <class name="tests.qualification.maven.UIPositiveNegativeTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

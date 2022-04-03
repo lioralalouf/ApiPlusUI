@@ -1,0 +1,15 @@
+{
+  "timestamp": "2020-01-01T00:00:00+04:00",
+  "inhaler": {
+    "authenticationKey": "ZTViNWM2ZTEtZmMxYi00MTQzLTkwOTUtNjZlODM5NjI0OTRm",
+    "addedDate": "2020-12-01T00:00:00+04:00",
+    "lastConnectionDate": "2020-01-01T00:00:00+04:00",
+    "lastRecord": 0,
+    "drugID": "AAA200",
+    "nickName": "Huff Daddy",
+    "remainingDoseCount": 5,
+    "serialNumber": 123456789,
+    "hardwareRevision": "003H",
+    "softwareRevision": "1.1.1274.26676"
+  }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+      <listener class-name="extentReports.TestListeners"></listener>
+  </listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="tests.dss.api.DataRequestAuthorizationNegativeTest"/>
+      <class name="tests.dss.api.Locales"/>
+      <class name="tests.dss.api.DataGetApiKeyDetailsNagativeTest"/>
+      <class name="tests.dss.api.GetApiKeyDetailsNegativeTest"/>
+      <class name="tests.dss.api.OnboardPartnerConsentNagativeTest"/>
+      <class name="tests.dss.api.DeleteConsentNegativeTest"/>
+      <class name="tests.dss.api.DeletePartnerPositiveTest"/>
+      <class name="tests.dss.api.OnboardOrganizationConsentNagativeTest"/>
+      <class name="tests.dss.api.ConnectAccountNegativeTest"/>
+      <class name="tests.dss.api.OnboardOrganizationConsentPositiveTest"/>
+      <class name="tests.dss.api.CreatePartnerNegativeTest"/>
+      <class name="tests.dss.api.ExpiredApiKeyPositiveTest"/>
+      <class name="tests.dss.api.OnboardPartnerConsentPositiveTest"/>
+      <class name="tests.dss.api.Consent"/>
+      <class name="tests.dss.api.ConsentsResponse"/>
+      <class name="tests.dss.api.OnboardProgramConsentPositiveTest"/>
+      <class name="tests.dss.api.GetApiKeyDetailsPositiveTest"/>
+      <class name="tests.dss.api.GetPartnerDetailsPositiveTest"/>
+      <class name="tests.dss.api.GenerateApiKeyPositiveTest"/>
+      <class name="tests.dss.api.ConnectAccountPositiveTest"/>
+      <class name="tests.dss.api.RevokeApiKeyPositiveTest"/>
+      <class name="tests.dss.api.PartnerConfigurationLimitationPositiveTest"/>
+      <class name="tests.dss.api.GetListOfPartnersPositiveTest"/>
+      <class name="tests.dss.api.DataRequestAuthorizationPositiveTest"/>
+      <class name="tests.dss.api.GetPartnerDetailsNegativeTest"/>
+      <class name="tests.dss.api.DataGetAuthorizationVersionPositiveNegativeTest"/>
+      <class name="tests.dss.api.GenerateApiKeyNegativeTest"/>
+      <class name="tests.dss.api.CreatePartnerPositiveTest"/>
+      <class name="tests.dss.api.DataGetPartnerDetailsPositiveTest"/>
+      <class name="tests.dss.api.DeletePartnerNegativeTest"/>
+      <class name="tests.dss.api.DataGetPartnerByPatientPositiveNegativeTest"/>
+      <class name="tests.dss.api.DataGetInhalerPositiveTest"/>
+      <class name="tests.dss.api.UploadImageNagativeTest"/>
+      <class name="tests.dss.api.UpdatePartnerNegativeTest"/>
+      <class name="tests.dss.api.UploadImagePositiveTest"/>
+      <class name="tests.dss.api.data"/>
+      <class name="tests.dss.api.DataGetApiKeyDetailsPositiveTest"/>
+      <class name="tests.dss.api.UpdatePartnerPositiveTest"/>
+      <class name="tests.dss.api.DeleteImagePositiveTest"/>
+      <class name="tests.dss.api.DeleteConsentPositiveTest"/>
+      <class name="tests.dss.api.DataGetPartnerDetailsNegativeTest"/>
+      <class name="tests.dss.api.OnboardProgramConsentNegativeTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

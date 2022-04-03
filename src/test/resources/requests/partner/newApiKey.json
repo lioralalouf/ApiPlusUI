@@ -1,0 +1,14 @@
+{
+  "ipAddresses": [
+    "*"
+  ],
+  "scopes": [
+    "data:inhalation:read",
+    "data:inhaler:read",
+    "data:dsa:read",
+    "data:connection:delete",
+    "data:api:partner:read",
+    "data:api:key:read",
+    "data:api:key:create"
+  ]
+}

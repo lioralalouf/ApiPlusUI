@@ -1,0 +1,32 @@
+{
+  "name": "f48ppppasdadasdsadas11111111",
+  "icon": "http://www.example.com/dataPartner/logo.png",
+  "activePrivacyNoticeVersion": "1.0",
+  "activeTermsOfUse": "1.0",
+  "activeHipaaDisclosure": "1.0",
+  "activeSignature": "1.0",
+  "activeMarketingConsent": "1.0",
+  "onDone": "window.postMessage('Success','*')",
+  "redirects": {
+    "success": "http://www.example.com/connection/success",
+    "failure": "http://www.example.com/connection/success"
+  },
+  "callbacks": {
+    "success": "http://www.example.com/sucesss",
+    "failure": "http://www.example.com/failure"
+  },
+  "throttle": {
+    "rate": 10,
+    "burst": 10
+  },
+  "quota": {
+    "limit": 300,
+    "period": "day"
+  },
+  "contact": {
+    "firstName": "g9pp89",
+    "lastName": "Pizza",
+    "email": "tony.pizza@example.com",
+    "phoneNumber": "555-555-5555"
+  }
+}
